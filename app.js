@@ -2,7 +2,7 @@
 var name = 'Jordon'
 name = 15
 if ("name" >= 16) {
-    console.log("True")
+   return true;
 } else {
-    console.log("False")
+   return false;
 }
