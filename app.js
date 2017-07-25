@@ -6,3 +6,7 @@ if ("name" >= 16) {
 } else {
    return false;
 }
+function discount (total , discount) {
+   var discount = .2;
+   return (total * discount);
+}
