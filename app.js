@@ -7,6 +7,5 @@ if ("name" >= 16) {
    return false;
 }
 function discount (total , discount) {
-   var discount = .2;
-   return (total * discount);
+   return (total -(total *(discount / 100 )))
 }
