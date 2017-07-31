@@ -6,11 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="warmup.css">
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
   <title>Warm-Up</title>
 </head>
 <body>
   <header style="background-color: lightblue;">
-    <h1>Header</h1>
+      <img class ="tennisBall" src="http://res.freestockphotos.biz/pictures/16/16637-illustration-of-a-tennis-ball-pv.png">
+    <h1 id="h1Button">Header</h1>
   </header>
   <main style="background-color: #98AFC7; position: auto;">
     <h1>Main</h1>
@@ -29,12 +31,29 @@
     </section>
     <aside id="bio" style="background-color: #87AFC7; float: right;">
       <h2>Aside</h2>
-      <img style="height:250px; width: 500px;" src="https://www.sitebuilderreport.com/assets/facebook-stock-up-446fff24fb11820517c520c4a5a4c032.jpg">
-      <p>This is the paragraph below the image.</p>
+      <img id ='dog' src="https://www.sitebuilderreport.com/assets/facebook-stock-up-446fff24fb11820517c520c4a5a4c032.jpg">
+      <p id="p_below">This is the paragraph below the image.</p>
     </aside>
   </main>
   <footer style="background-color: lightblue; position: absolute; bottom: 0; width: 100%;">
     <h1>Footer</h1>
   </footer>
+  <script
+    src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+          <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+          <script>
+              $(document).ready(function() {
+                  // Notice the .on instead of .click, it's the new style for events
+                  // in jQuery and the e argument
+                  $("#h1Button").on('click', function (e) {
+                      e.preventDefault();
+                      $(".tennisBall").effect( "bounce", { times : 3 }, 300);
+                  });
+              });
+          </script>
 </body>
 </html>
