@@ -14,3 +14,12 @@ p {
   font-family: 'Gloria Hallelujah', cursive;
   text-align: left;
 }
+.tennisBall {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+#dog {
+  height: 250px;
+  width: 500px;
+}
